@@ -1,0 +1,63 @@
+// layout
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$gutter: 15px;
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    text-align: center;
+}
+
+// color
+$white: #fff;
+
+// fonts
+$cursive: 'Satisfy', cursive;
+$main: 'Raleway', sans-serif;
+
+// typography
+p {
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+    line-height: 2.6rem;
+}
+strong {
+    font-weight: 700;
+}
+
+// headlines
+h1,h2, h3,h4,h5,h6 {
+    margin: 1.6rem 0;
+    font-weight: 700;
+}
+h1 {
+    font-size: 7rem;
+    font-family: $cursive;
+    font-weight: 100;
+    line-height: 8rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+h4 {
+    font-size: 2.5rem; 
+    line-height: 3rem;
+}
+h5 {
+    font-size: 2rem; 
+    line-height: 2.5rem;
+}
+h6 {
+    font-size: 1.5rem; 
+    line-height: 2rem;
+}

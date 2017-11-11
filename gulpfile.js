@@ -36,7 +36,7 @@ gulp.src(['src/styles/**/*.scss'])
     this.emit('end');
 }}))
 .pipe(sass())
-.pipe(autoprefixer('last 2 versions'))
+.pipe(autoprefixer('last 10 versions'))
 .pipe(gulp.dest('css/'))
 .pipe(rename({suffix: '.min'}))
 .pipe(minifycss())
