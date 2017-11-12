@@ -30,6 +30,11 @@
 .small {
     font-size: 0.7rem;
 }
+.img-border {
+    display: inline-block;
+    box-shadow: -3px 3px 0 $accent-3, -4px 4px 0 rgba($accent-4, 1);
+
+}
 
 // wrapper
 html,
