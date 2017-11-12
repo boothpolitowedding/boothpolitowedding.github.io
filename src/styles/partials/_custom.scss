@@ -1,3 +1,20 @@
+// mixins
+@mixin btn($color, $hover-bg, $hover-color) {
+    display: inline-block;
+    color: $color;
+    border: 1px solid $color;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .25s ease-in;
+
+    &:hover,
+    &:active {
+        background: $hover-bg;
+        color: $hover-color;
+        transition: all .25s ease-in;
+    }
+}
+
 // wrapper
 html,
 body,
@@ -18,23 +35,43 @@ main.main {
 
     // intro text
     .content {
-        color: #fff;
+        color: $white;
         padding: $gutter;
-        background: #5C6E6B;
-        border-bottom: 10px solid #8F8781;
+        background: $primary;
+        background: linear-gradient(to right, $primary, lighten($primary,20%));
+        border-bottom: 10px solid $secondary;
         text-align: center;
         position: sticky;
         top: 0px;
+        box-shadow: 2px 2px 2px rgba($black,0.5);
 
+        // title
+        h1 {
+            text-shadow: -2px 2px 0 $primary, -4px 4px 0 rgba($black, .5);
+        }
+        // date
         h3 {
             font-weight: 300;
+            text-shadow: -1px 1px 0 $primary, -2px 2px 0 rgba($black, .5);
         }
+
+        // links
+        nav {
+            a {
+                @include btn($white, $white, $primary);
+                font-size: 2rem;
+                margin: 0 $gutter;
+                box-shadow: -2px 2px 0 $primary, -4px 4px 0 rgba($black, .5);
+            }
+        }
+
     }
     
 }
 
 // info
 #info {
-    background: #ECE3D9;
-    color: #444;
+    background: $accent-3;
+    background: linear-gradient(to right, $accent-3, lighten($accent-3,30%));
+    overflow: auto;
 }
