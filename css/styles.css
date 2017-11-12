@@ -688,6 +688,10 @@ textarea {
   display: inline-block;
   box-shadow: -3px 3px 0 #ECE3D9, -4px 4px 0 #444444; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 @media all and (min-width: 768px) {
   html,
   body,
