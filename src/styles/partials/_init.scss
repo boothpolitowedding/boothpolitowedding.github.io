@@ -1,4 +1,7 @@
 // layout
+* {
+    box-sizing: border-box;
+}
 $xs: 480px;
 $sm: 768px;
 $md: 992px;
@@ -27,6 +30,20 @@ $accent-4: #444;
 $cursive: 'Satisfy', cursive;
 $main: 'Raleway', sans-serif;
 
+// links
+a {
+    color: $accent-4;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed $accent-4;
+
+    &:hover,
+    &:active {
+        color: $primary;
+        border-bottom: 1px dashed $primary;
+    }
+}
+
 // typography
 p {
     font-size: 1.6rem;
@@ -34,13 +51,14 @@ p {
     line-height: 2.6rem;
 }
 strong {
-    font-weight: 700;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 // headlines
 h1,h2, h3,h4,h5,h6 {
     margin: 1.6rem 0;
-    font-weight: 700;
+    font-weight: 300;
 }
 h1 {
     font-size: 7rem;

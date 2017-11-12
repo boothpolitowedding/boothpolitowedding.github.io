@@ -10,9 +10,25 @@
     &:hover,
     &:active {
         background: $hover-bg;
+        background: linear-gradient(to right, $hover-bg, darken($hover-bg,15%));
         color: $hover-color;
         transition: all .25s ease-in;
     }
+}
+
+// classes
+.full-width {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hide-for-large {
+    @media all and (min-width: $sm) {
+        display: none;
+    }
+}
+.small {
+    font-size: 0.7rem;
 }
 
 // wrapper
@@ -60,7 +76,7 @@ main.main {
             a {
                 @include btn($white, $white, $primary);
                 font-size: 2rem;
-                margin: 0 $gutter;
+                margin: $gutter;
                 box-shadow: -2px 2px 0 $primary, -4px 4px 0 rgba($black, .5);
             }
         }
@@ -71,7 +87,57 @@ main.main {
 
 // info
 #info {
-    background: $accent-3;
-    background: linear-gradient(to right, $accent-3, lighten($accent-3,30%));
+    background: $accent-2;
+    background: linear-gradient(to right, $accent-2, lighten($accent-3,30%));
     overflow: auto;
+
+    h2,h3,h4 {
+        text-transform: uppercase;
+    }
+    h2 {
+        letter-spacing: .5rem;
+        font-weight: 300;
+        text-shadow: -1px 1px 0 $accent-3, -2px 2px 0 rgba($accent-4, 1);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 110%;
+            background: $accent-4;
+            background: linear-gradient(to right, rgba($accent-4, 0),$accent-4,rgba($accent-4,0));
+            left: 0;
+            z-index: 2;
+        }
+        &:before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 10px;
+            background: $accent-4;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            margin-top: -2px;
+            border-radius: 10px;
+            border: 2px solid $accent-3;
+            z-index: 3;
+        }
+    }
+
+    // btns
+    a.btn {
+        @include btn($accent-4, $accent-4, $accent-3);
+        font-size: 2rem;
+        margin: $gutter;
+        box-shadow: -2px 2px 0 $accent-3, -3px 3px 0 rgba($accent-4, 1);
+    }
 }
+
+// footer
