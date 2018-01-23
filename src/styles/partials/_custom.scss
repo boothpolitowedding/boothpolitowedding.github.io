@@ -57,6 +57,13 @@ main.main {
     background-size: cover;
     background-attachment: fixed;
 
+    // no background image
+    &.main--no-bg {
+        background: none;
+        height: auto;
+        min-height: auto;
+    }
+
     // intro text
     .content {
         color: $white;
