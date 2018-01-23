@@ -47,11 +47,11 @@ function groomsMenLeaderBoard() {
         var score = groomsMan.score;
         
         if (index === 0) {
-            leaderTable.innerHTML += '<tr class="positive"><td>' + name + '</td><td>' + score + '</td><td>Yes</td></tr>';
+            leaderTable.innerHTML += '<tr class="positive"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Yes</td></tr>';
         } else if (index === groomsMen.length-1) {
-            leaderTable.innerHTML += '<tr class="negative"><td>' + name + '</td><td>' + score + '</td><td>Never</td></tr>';
+            leaderTable.innerHTML += '<tr class="negative"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Never</td></tr>';
         } else {
-            leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score + '</td><td>Not Yet</td></tr>';
+            leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Not</td></tr>';
         }
         
     });
