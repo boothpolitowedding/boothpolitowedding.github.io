@@ -51,7 +51,7 @@ function groomsMenLeaderBoard() {
         } else if (index === groomsMen.length-1) {
             leaderTable.innerHTML += '<tr class="negative"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Never</td></tr>';
         } else {
-            leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Not</td></tr>';
+            leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Not Yet</td></tr>';
         }
         
     });
