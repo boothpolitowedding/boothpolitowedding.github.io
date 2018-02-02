@@ -1393,18 +1393,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: "Satisfy", cursive;
   font-weight: 100;
   line-height: 8rem; }
+  @media all and (min-width: 1200px) {
+    h1 {
+      font-size: 7rem; } }
 
 h2 {
   font-size: 4rem;
   line-height: 5rem; }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 4rem; }
+  @media all and (min-width: 1200px) {
+    h3 {
+      font-size: 3rem; } }
 
 h4 {
   font-size: 2.5rem;
@@ -1673,7 +1679,7 @@ img {
     z-index: 1; } }
 
 main.main {
-  background: url("https://lh3.googleusercontent.com/WrMMVEBKBohs6qkCMtzOKXkUrtG2f_tSDrjnN054OCbFKNXM5eLScbYT0PFqDL1uPNIvbT1GFzPM-nR64_0J71J5GVHAZAGGm8jFAXSeoTICM9T_s41r7GlHVUVt9x1SO6cxx0rgK_VErsy_l-9pDLmgFCGacjD3VZeGTwNGRIFEYa8cFmM9PL8rom3Jq3qPj5Xnbi6J4ypjVC3yK9X8aHYreoIu0JpC2weslyaokSlLhC2MQHHsP_KfBtavazQ_5wiXSBbn8AZ9t7A0r_kqjkPJ6RGTO4aALCJRYu_kxMPKaxwz9fvkFAMopUvKIrpaVSNzjCKh_w7SN4sJLyCLNXi_dsDwQ7_f91_aFaME0oUsnscI5Ijyzi1AS256LvSsz1ydkCtNcE3G2Woq5q5Mw82YkHpjJRK1zBEBtpOF6yD75SmyeC3jjxZCObwCR0LUFFUx1mtAsxtiXAFNhmqSRYGTazE62M4kt8bETHFFtkxAeXYAcZFSoZkjnF5qTKalpWaTP-ctT1dJoZI3nREq0lQKz0_JHtrqCQ7vn5aAXkqfXAtycCYBXe95fW2lTtyDBXVAgznQgqapcRQQyZY4dHkyxMaL28PQ5aJ4q1dfjyDY-Mdv5RtgHv8LHgwqfbfPE5c1yi8_8li3pelZg2PzcQKXrqS6xzfPKV4=w1217-h811-no") center right no-repeat;
+  background: url("https://lh3.googleusercontent.com/WrMMVEBKBohs6qkCMtzOKXkUrtG2f_tSDrjnN054OCbFKNXM5eLScbYT0PFqDL1uPNIvbT1GFzPM-nR64_0J71J5GVHAZAGGm8jFAXSeoTICM9T_s41r7GlHVUVt9x1SO6cxx0rgK_VErsy_l-9pDLmgFCGacjD3VZeGTwNGRIFEYa8cFmM9PL8rom3Jq3qPj5Xnbi6J4ypjVC3yK9X8aHYreoIu0JpC2weslyaokSlLhC2MQHHsP_KfBtavazQ_5wiXSBbn8AZ9t7A0r_kqjkPJ6RGTO4aALCJRYu_kxMPKaxwz9fvkFAMopUvKIrpaVSNzjCKh_w7SN4sJLyCLNXi_dsDwQ7_f91_aFaME0oUsnscI5Ijyzi1AS256LvSsz1ydkCtNcE3G2Woq5q5Mw82YkHpjJRK1zBEBtpOF6yD75SmyeC3jjxZCObwCR0LUFFUx1mtAsxtiXAFNhmqSRYGTazE62M4kt8bETHFFtkxAeXYAcZFSoZkjnF5qTKalpWaTP-ctT1dJoZI3nREq0lQKz0_JHtrqCQ7vn5aAXkqfXAtycCYBXe95fW2lTtyDBXVAgznQgqapcRQQyZY4dHkyxMaL28PQ5aJ4q1dfjyDY-Mdv5RtgHv8LHgwqfbfPE5c1yi8_8li3pelZg2PzcQKXrqS6xzfPKV4=w1217-h811-no") top right no-repeat;
   background-size: cover;
   background-attachment: fixed; }
   main.main.main--no-bg {
