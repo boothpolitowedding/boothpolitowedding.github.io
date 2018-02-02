@@ -1679,7 +1679,7 @@ img {
     z-index: 1; } }
 
 main.main {
-  background: url("../img/bg.jpg") top right no-repeat;
+  background: url("../img/bg_new.jpg") top right no-repeat;
   background-size: cover;
   background-attachment: fixed; }
   main.main.main--no-bg {
