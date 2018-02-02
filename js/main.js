@@ -1,4 +1,5 @@
 function groomsMenLeaderBoard() {
+
     // random number generator
     function getRandomArbitrary(min, max) {
         min = Math.ceil(min);
@@ -46,13 +47,16 @@ function groomsMenLeaderBoard() {
         var name = groomsMan.name;
         var score = groomsMan.score;
         
-        if (index === 0) {
-            leaderTable.innerHTML += '<tr class="positive"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Yes</td></tr>';
-        } else if (index === groomsMen.length-1) {
-            leaderTable.innerHTML += '<tr class="negative"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Never</td></tr>';
-        } else {
-            leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Not Yet</td></tr>';
+        if (leaderTable) {
+            if (index === 0) {
+                leaderTable.innerHTML += '<tr class="positive"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Yes</td></tr>';
+            } else if (index === groomsMen.length-1) {
+                leaderTable.innerHTML += '<tr class="negative"><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Never</td></tr>';
+            } else {
+                leaderTable.innerHTML += '<tr><td>' + name + '</td><td>' + score.toLocaleString() + '</td><td>Not Yet</td></tr>';
+            }
         }
+
         
     });
 }
