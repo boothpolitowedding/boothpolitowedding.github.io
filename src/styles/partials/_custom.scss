@@ -1,6 +1,5 @@
 // mixins
 @mixin btn($color, $hover-bg, $hover-color) {
-    display: inline-block;
     color: $color;
     border: 1px solid $color;
     padding: 10px;
@@ -96,7 +95,10 @@ main.main {
         }
 
         // links
-        nav {
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             a {
                 @include btn($white, $white, $primary);
                 font-size: 2rem;
@@ -104,6 +106,12 @@ main.main {
                 box-shadow: -2px 2px 0 $primary, -4px 4px 0 rgba($black, .5);
             }
         }
+        .nav--large {
+            a {
+                @include btn($white, $white, $primary);
+                font-size: 3rem;
+            }
+        }        
 
     }
     
