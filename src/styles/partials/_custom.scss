@@ -1,5 +1,6 @@
 // mixins
 @mixin btn($color, $hover-bg, $hover-color) {
+    display: inline-block;
     color: $color;
     border: 1px solid $color;
     padding: 10px;

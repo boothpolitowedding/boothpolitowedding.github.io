@@ -1719,6 +1719,7 @@ main.main {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       main.main .content .nav a {
+        display: inline-block;
         color: #fff;
         border: 1px solid #fff;
         padding: 10px;
@@ -1733,6 +1734,7 @@ main.main {
           color: #5C6E6B;
           transition: all .25s ease-in; }
     main.main .content .nav--large a {
+      display: inline-block;
       color: #fff;
       border: 1px solid #fff;
       padding: 10px;
@@ -1788,6 +1790,7 @@ main.main {
       border: 2px solid #ECE3D9;
       z-index: 3; }
   #info a.btn {
+    display: inline-block;
     color: #444;
     border: 1px solid #444;
     padding: 10px;
